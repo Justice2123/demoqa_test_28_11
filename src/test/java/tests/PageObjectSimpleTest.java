@@ -9,7 +9,7 @@ import pages.RegistrationPage;
 import pages.components.ModalWindow;
 import utils.TestData;
 
-
+@Tag("simple")
 public class PageObjectSimpleTest extends TestBase {
 
     RegistrationPage registrationPage = new RegistrationPage();
@@ -18,7 +18,6 @@ public class PageObjectSimpleTest extends TestBase {
 
 
     @Test
-    @Tag("simple")
     void fillFormTests() {
 
         registrationPage.openPage();
