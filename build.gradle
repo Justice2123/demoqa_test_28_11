@@ -8,8 +8,8 @@ repositories {
 }
 
 
-def allureVersion = "2.21.0",
-    selenideVersion = "6.19.1"
+def allureVersion = "2.27.0",
+    selenideVersion = "7.2.3"
 
 allure {
     report {
@@ -27,9 +27,8 @@ allure {
 
 dependencies {
     testImplementation(
-           // "com.codeborne:selenide:$selenideVersion",
-            "com.codeborne:selenide:6.19.1",
-            "org.junit.jupiter:junit-jupiter:5.10.0",
+            "com.codeborne:selenide:$selenideVersion",
+            "org.junit.jupiter:junit-jupiter:5.10.2",
             "com.github.javafaker:javafaker:1.0.2",
             "io.qameta.allure:allure-selenide:$allureVersion",
             'org.slf4j:slf4j-simple:2.0.7'
