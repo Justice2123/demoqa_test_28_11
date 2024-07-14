@@ -1,6 +1,9 @@
 package tests;
 
 
+import com.codeborne.selenide.logevents.SelenideLogger;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import pages.RegistrationPage;
 import pages.components.ModalWindow;
@@ -13,7 +16,9 @@ public class PageObjectSimpleTest extends TestBase {
     ModalWindow modalWindow = new ModalWindow();
     TestData testData = new TestData();
 
+
     @Test
+    @Tag("simple")
     void fillFormTests() {
 
         registrationPage.openPage();
