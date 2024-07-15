@@ -20,7 +20,7 @@ public class PageObjectSimpleTest extends TestBase {
 
 
     @Test
-   // @Tag("simple")
+   @Tag("simple")
     void fillFormTests() {
         step("Open form", () -> {
             registrationPage.openPage();
