@@ -5,6 +5,7 @@ import pages.components.CalendarComponent;
 
 import java.io.File;
 
+import static com.codeborne.selenide.Condition.oneOfExactTexts;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
@@ -35,7 +36,8 @@ public class RegistrationPage {
         open("/automation-practice-form");
         header.shouldHave(text("Practice Form"));
         executeJavaScript("document.getElementById('close-fixedban').parentNode.remove()");
-        executeJavaScript("document.getElementById('Ad.Plus-970x250-2').parentNode.remove()");
+        executeJavaScript("document.getElementById('Ad.Plus-970x250-1').remove()");
+        executeJavaScript("document.getElementById('google_ads_iframe_').remove()");
         executeJavaScript("document.getElementById('sub-frame-error').remove()");
         executeJavaScript("document.getElementsByTagName('footer')[0].remove()");
     }
