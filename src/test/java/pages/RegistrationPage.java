@@ -37,7 +37,7 @@ public class RegistrationPage {
         header.shouldHave(text("Practice Form"));
         executeJavaScript("document.getElementById('fixedban').remove()");
         executeJavaScript("document.getElementById('Ad.Plus-970x250-1').remove()");
-        executeJavaScript("document.getElementsByTagName('footer').remove()");
+        executeJavaScript("document.getElementByTagName('footer').remove()");
     }
 
 
