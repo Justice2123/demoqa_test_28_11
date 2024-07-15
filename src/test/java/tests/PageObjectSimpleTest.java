@@ -11,7 +11,7 @@ import utils.TestData;
 
 import static io.qameta.allure.Allure.step;
 
-//@Tag("simple")
+@Tag("simple")
 public class PageObjectSimpleTest extends TestBase {
 
     RegistrationPage registrationPage = new RegistrationPage();
@@ -20,7 +20,6 @@ public class PageObjectSimpleTest extends TestBase {
 
 
     @Test
-   @Tag("simple")
     void fillFormTests() {
         step("Open form", () -> {
             registrationPage.openPage();
@@ -64,7 +63,6 @@ public class PageObjectSimpleTest extends TestBase {
     }
 
     @Test
-    @Tag("simple")
     void minFormTest() {
         registrationPage.openPage();
 
