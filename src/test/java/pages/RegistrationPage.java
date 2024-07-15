@@ -35,7 +35,7 @@ public class RegistrationPage {
     public void openPage() {
         open("/automation-practice-form");
         header.shouldHave(text("Practice Form"));
-        executeJavaScript("document.getElementById('fixedban').parentNode.remove()");
+        executeJavaScript("document.getElementById('fixedban').remove()");
         executeJavaScript("document.getElementById('Ad.Plus-970x250-1').remove()");
         executeJavaScript("document.getElementsByTagName('footer').remove()");
     }
