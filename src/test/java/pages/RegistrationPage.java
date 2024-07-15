@@ -36,7 +36,7 @@ public class RegistrationPage {
         open("/automation-practice-form");
         header.shouldHave(text("Practice Form"));
         executeJavaScript("document.getElementById('close-fixedban').parentNode.remove()");
-        //executeJavaScript("document.getElementById('Ad.Plus-970x250-1').remove()");
+        executeJavaScript("document.getElementById('Ad.Plus-970x250-1').remove()");
         //executeJavaScript("document.getElementById('google_ads_iframe_/21849154601,22343295815/Ad.Plus-Anchor_0').remove()");
         executeJavaScript("document.getElementsByTagName('footer')[0].remove()");
     }
