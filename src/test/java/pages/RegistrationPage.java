@@ -3,9 +3,7 @@ package pages;
 import com.codeborne.selenide.SelenideElement;
 import pages.components.CalendarComponent;
 
-import java.io.File;
 
-import static com.codeborne.selenide.Condition.oneOfExactTexts;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
@@ -37,8 +35,6 @@ public class RegistrationPage {
         header.shouldHave(text("Practice Form"));
         executeJavaScript("$('#fixedban').remove()");
         executeJavaScript("$('footer').remove()");
-        //executeJavaScript("$('Ad.Plus-970x250-1').remove()");
-
     }
 
 
