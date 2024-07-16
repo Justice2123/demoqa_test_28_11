@@ -6,6 +6,7 @@ import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import helpers.Attachments;
 
@@ -16,7 +17,6 @@ public class TestBase {
 
     @BeforeAll
     static void setUpBefore() {
-        SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
         Configuration.baseUrl = "https://demoqa.com";
         //Configuration.browserSize = "1920x1080";
         //Configuration.browser = "chrome";
@@ -32,6 +32,11 @@ public class TestBase {
         ));
         Configuration.browserCapabilities = capabilities;
 
+    }
+
+    @BeforeEach
+    void setUpBeforeEach() {
+        SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
     }
 
     @AfterEach
